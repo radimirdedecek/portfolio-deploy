@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO SECTION: This is what Google reads -->
+    <title>Radimir Dedecek | Full-Stack Developer with a primary focus on Backend engineering</title>
+    <meta name="description" content="Portfolio of Radimir Dedecek. Showcasing expertise in C++, Python, Docker, and AI/Machine Learning. Explore interactive tech demos and professional projects.">
+    <meta name="keywords" content="Radimir Dedecek, Software Engineer Portfolio, Full-Stack Developer, C/C++ Developer, Python, Machine Learning, Docker, Kubernetes, Linux, Unix, Git, REST API, Pandas, Numpy, Scikit-learn, TensorFlow, Bootstrap">
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <style>
+    body {
+      margin: 0;
+      background: #0f172a;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .container {
+      max-width: 600px;
+    }
+  
+    p {
+      margin-top: 5px;
+      letter-spacing: 2px;
+      font-weight: 100;
+      color: #8493a8;
+      font-size: 0.6rem;
+    }
+  
+    /* The Logo/Spinner area */
+    .loader-box {
+      position: relative;
+      margin-bottom: 30px;
+    }
+  
+    .spinner-img {
+      width: 100px;
+      height: 100px;
+      animation: pulse 2s infinite ease-in-out;
+    }
+  
+    @keyframes pulse {
+      0% {
+        transform: scale(0.95);
+        opacity: 0.8;
+      }
+  
+      50% {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+  
+      100% {
+        transform: scale(0.95);
+        opacity: 0.8;
+      }
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+      margin-bottom: 1px;
+      color: #f8fafc;
+    }
+  
+    h2 {
+      font-size: 1rem;
+      color: #38bdf8;
+      font-weight: 400;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  
+    ax {
+      font-size: 1rem;
+      color: #f8fafc;
+      font-weight: 400;
+      margin-bottom: 30px;
+      letter-spacing: 2px;
+      text-decoration: none;
+    }
+  
+    .status-container {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  
+    .status-text {
+      color: #94a3b8;
+      font-size: 0.9rem;
+      margin-bottom: 5px;
+    }
+  
+    .progress-bar {
+      width: 100%;
+      height: 4px;
+      background: #1e293b;
+      border-radius: 2px;
+      overflow: hidden;
+      margin-top: 15px;
+    }
+  
+    .progress-fill {
+      width: 30%;
+      height: 100%;
+      background: #38bdf8;
+      animation: loading 3s infinite ease-in-out;
+    }
+  
+    @keyframes loading {
+      0% {
+        width: 0%;
+        transform: translateX(-100%);
+      }
+  
+      50% {
+        width: 50%;
+        transform: translateX(50%);
+      }
+  
+      100% {
+        width: 0%;
+        transform: translateX(150%);
+      }
+    }
+  
+    /* SEO Content: Hidden from user but readable by Google if you want, 
+             or just keep it visible as a "Biography Preview" */
+    .bio-preview {
+      margin-top: 40px;
+      font-size: 0.85rem;
+      color: #475569;
+      max-width: 500px;
+      line-height: 1.6;
+    }
+  
+    a {
+      text-decoration: none !important;
+      color: inherit;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      /* Space between icon and text */
+      transition: color 0.3s ease;
+    }
+  
+    /* Hover effect */
+    a:hover {
+      color: #38bdf8;
+      /* Light blue on hover */
+    }
+  
+    /* Container for the links to keep them centered and aligned */
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      /* Aligns items to the left of the center-container */
+      display: inline-block;
+      /* Keeps the block centered but text left-aligned */
+      text-align: left;
+      margin-top: 20px;
+    }
+  
+    /* Style for the "point/circle" icon */
+    .dot {
+      height: 8px;
+      width: 8px;
+      background-color: #38bdf8;
+      border-radius: 50%;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="loader-box">
+            <img src="static/images/faviconBue.png" width="100" alt="Radimir Dedecek Logo" >
+        </div>
+
+        <h1>RADIMIR DEDECEK</h1>
+        <h2>Portfolio & Technology Stack</h2>
+        
+        <div class="status-container">
+          <div id="loading_section">
+            <p class="status-text" id="status-msg">Initializing Secure Connection...</p>
+            <div class="progress-bar">
+              <div class="progress-fill"></div>
+            </div>
+            <p style="font-size: 0.75rem; color: #64748b;">Starting Python/Flask Backend on Google Cloud Run</p>
+          </div>
+          <div id="link_section" style="display: none;">
+            <p style="color: #10b981; font-weight: bold;">[ CONTAINER/SYSTEM READY ]</p>
+        
+            <div class="links-container">
+              <a href="https://portfolio-app-973213586080.europe-west1.run.app" target="_blank">
+                <span class="dot"></span>
+                Direct GCP (Works OK)
+              </a>
+        
+              <a href="https://radimirdedecek.com/portfolio" style="margin-top: 15px;">
+                <span class="dot"></span>
+                Custom Domain (Firebase testing, works partially)
+              </a>
+            </div>
+          </div>
+        
+        </div>
+        <p>(Splash screen V3.1)</p>
+        
+        <div class="bio-preview">
+            Full-Stack Developer with a primary focus on Backend engineering, UNIX/Linux environments, and modern AI integration. 
+            Initializing interactive demos for Python, REST APIs, Pandas, Numpy, Scikit-learn, TensorFlow, C/C++, Docker.
+        </div>
+    </div>
+  <!-- <img src="spinner.svg" class="spinner-img" width="120" height="120" alt="loader spinner Image">
+  <p>WAKING UP THE SYSTEM...</p> -->
+
+
+  <script>
+        const gcpUrl = "https://portfolio-app-973213586080.europe-west1.run.app";
+        const msgs = [
+            "Initializing Secure Connection...",
+            "Waking up Cloud Run Container...",
+            "Loading Neural Network Models...",
+            "Preparing Interactive Environment..."
+        ];
+        let i = 0;
+        const msgElement = document.getElementById('status-msg');
+        const link_section = document.getElementById('link_section');
+        const loading_section = document.getElementById('loading_section');
+        
+        // Cycle messages for better UX
+        setInterval(() => {
+            i = (i + 1) % msgs.length;
+            msgElement.innerText = msgs[i];
+        }, 2000);
+
+        async function wakeUp() {    // OLD CODE V1
+          try {
+            await fetch('/api/healthx');
+            // window.location.href = '/portfolio';     //firebase deploy app link
+            // window.location.href = gcpUrl;           //portfolio app GCP link
+            loading_section.style.display = 'none';
+            link_section.style.display = 'block';
+          } catch (e) {
+            setTimeout(wakeUp, 1000);
+          }
+        }
+        wakeUp();
+
+        // setInterval(() => {
+        //   loading_section.style.display = 'none';
+        //   link_section.style.display = 'block';
+        // }, 5000);
+        
+      
+        // async function wakeUp() {    //  CODE V2
+        //     try {
+        //         // Ping your real Cloud Run endpoint
+        //         const response = await fetch('/api/health');
+        //         if (response.ok) {
+        //             window.location.href = '/portfolio'; 
+        //         } else {
+        //             setTimeout(wakeUp, 1500);
+        //         }
+        //     } catch (e) {
+        //         setTimeout(wakeUp, 1500);
+        //     }
+        // }
+        // wakeUp();
+
+        // async function wakeUp() {   //  CODE V3
+        //     try {
+        //         // Add a timestamp to the URL to force Safari to actually hit the server
+        //         const cacheBuster = `?t=${Date.now()}`;
+        //         const response = await fetch('/api/health' + cacheBuster);
+                
+        //         if (response.ok) {
+        //             // Force a hard reload to the portfolio page
+        //             window.location.replace('/portfolio'); 
+        //         } else {
+        //             setTimeout(wakeUp, 2000);
+        //         }
+        //     } catch (e) {
+        //         // If the server is still 'off', it will throw an error
+        //         setTimeout(wakeUp, 2000);
+        //     }
+        // }
+  </script>
+</body>
+</html>

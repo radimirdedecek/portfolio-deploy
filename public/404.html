@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 - Page Not Found | Radimir Dedecek</title>
+<link rel="icon" type="image/x-icon" href="static/images/favicon1.ico">
+
+<style>
+    body { margin: 0; background: #0f172a; display: flex; flex-direction: column; 
+           justify-content: center; align-items: center; min-height: 100vh; color: white; 
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; padding: 20px; }
+    
+    .container { max-width: 600px; }
+    
+    /* Consistent pulsing logo from index.html */
+    .loader-box { position: relative; margin-bottom: 30px; }
+    .spinner-img { width: 100px; height: 100px; animation: pulse 2s infinite ease-in-out; }
+    
+    @keyframes pulse {
+        0% { transform: scale(0.95); opacity: 0.8; }
+        50% { transform: scale(1.05); opacity: 1; }
+        100% { transform: scale(0.95); opacity: 0.8; }
+    }
+
+    h1 { font-size: 4rem; margin: 0; color: #38bdf8; line-height: 1; }
+    h2 { font-size: 1.5rem; letter-spacing: 1px; margin-bottom: 20px; color: #f8fafc; text-transform: uppercase; }
+    
+    .status-container { 
+        background: rgba(255,255,255,0.05); 
+        padding: 30px; 
+        border-radius: 12px; 
+        border: 1px solid rgba(255,255,255,0.1);
+        margin-bottom: 30px;
+    }
+    
+    .status-text { color: #94a3b8; font-size: 1rem; line-height: 1.6; margin-bottom: 20px; }
+    
+    .home-btn {
+        display: inline-block;
+        background: #5d6c82;
+        color: #fff;
+        text-decoration: none;
+        padding: 12px 30px;
+        border-radius: 8px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+    }
+    
+    .home-btn:hover {
+        background: #38bdf8;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 15px -3px rgba(56, 189, 248, 0.3);
+    }
+
+    .error-code {
+        font-size: 0.8rem;
+        color: #475569;
+        margin-top: 40px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+</style>
+
+
+</head>
+<body>
+<div class="container">
+    <div class="loader-box">
+        <img src="static/images/faviconBue.png" width="100" alt="Radimir Dedecek Logo" >
+    </div>
+
+    <h1>404</h1>
+    <h2>Path Not Resolved</h2>
+
+    <div class="status-container">
+        <p class="status-text">
+            The requested URL was not found on this server. <br>
+            The navigation system could not locate the resource.
+        </p>
+        <a href="/" class="home-btn">Return to System Home</a>
+    </div>
+
+    <div class="error-code">
+        System Error: HTTP_NOT_FOUND
+    </div>
+</div>
+</body>
+</html>

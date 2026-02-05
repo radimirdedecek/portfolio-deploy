@@ -1,0 +1,26 @@
+{
+  "hosting": {
+    "public": "public",
+    "trailingSlash": false,
+    "rewrites": [
+      {
+        "source": "/portfolio/**",
+        "run": {
+          "serviceId": "portfolio-app",
+          "region": "europe-west1"
+        }
+      },
+      {
+        "source": "/portfolio",
+        "run": {
+          "serviceId": "portfolio-app",
+          "region": "europe-west1"
+        }
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
