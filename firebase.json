@@ -1,25 +1,22 @@
 {
   "hosting": {
     "public": "public",
-    "trailingSlash": false,
     "rewrites": [
       {
+        "source": "/api/**",
+        "run": { "serviceId": "portfolio-app", "region": "europe-west1" }
+      },
+      {
+        "regex": "^/static/.*",
+        "run": { "serviceId": "portfolio-app", "region": "europe-west1" }
+      },
+      {
         "source": "/portfolio/**",
-        "run": {
-          "serviceId": "portfolio-app",
-          "region": "europe-west1"
-        }
+        "run": { "serviceId": "portfolio-app", "region": "europe-west1" }
       },
       {
-        "source": "/portfolio",
-        "run": {
-          "serviceId": "portfolio-app",
-          "region": "europe-west1"
-        }
-      },
-      {
-        "source": "**",
-        "destination": "/index.html"
+        "source": "/", 
+        "destination": "/index.html" 
       }
     ]
   }
