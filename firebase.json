@@ -11,6 +11,10 @@
         "run": { "serviceId": "portfolio-app", "region": "europe-west1" }
       },
       {
+        "source": "/metrics*",
+        "run": { "serviceId": "portfolio-app", "region": "europe-west1" }
+      },
+      {
         "source": "/portfolio/**",
         "run": { "serviceId": "portfolio-app", "region": "europe-west1" }
       },
